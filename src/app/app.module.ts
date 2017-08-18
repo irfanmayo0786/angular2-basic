@@ -6,13 +6,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 
-import { SidebarComponent } from './sidebar/sidebar.component';
-
-
-
 @NgModule({
   declarations: [
-    AppComponent,SidebarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -22,4 +18,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

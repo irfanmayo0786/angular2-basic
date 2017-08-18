@@ -1,35 +1,26 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <app-sidebar></app-sidebar>
-</div>
-<div class="alert alert-primary" role="alert">
-  This is a primary alert—check it out!
-</div>
-<div class="alert alert-secondary" role="alert">
-  This is a secondary alert—check it out!
-</div>
-<div class="alert alert-success" role="alert">
-  This is a success alert—check it out!
-</div>
-<div class="alert alert-danger" role="alert">
-  This is a danger alert—check it out!
-</div>
-<div class="alert alert-warning" role="alert">
-  This is a warning alert—check it out!
-</div>
-<div class="alert alert-info" role="alert">
-  This is a info alert—check it out!
-</div>
-<div class="alert alert-light" role="alert">
-  This is a light alert—check it out!
-</div>
-<div class="alert alert-dark" role="alert">
-  This is a dark alert—check it out!
-</div>
+<header>
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" aria-controls="appNavigation" [attr.aria-expanded]="!isCollapsed" aria-label="Toggle navigation" (click)="toggleMenu()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">My App</a>
+  <div class="collapse navbar-collapse" id="appNavigation" [ngbCollapse]="isCollapsed">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-item nav-link" routerLink="" routerLinkActive="active">Home</a>
+      <a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">About</a>
+    </div>
+  </div>
+</nav>
+</header>
 
 <div class="container">
-    
-</div>
+    <div class="card border-success mb-3" style="max-width: 20rem;">
+      <div class="card-header bg-transparent border-success">Header</div>
+      <div class="card-body text-success">
+        <h4 class="card-title">Success card title</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-footer bg-transparent border-success">Footer</div>
+    </div>
 
+</div>
